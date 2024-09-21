@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question</title>
+    <link rel="stylesheet" href="styles.css"> </link>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Select the answer:</h1>
+    <form id="quiz">
+<div class="question">
+    <p>1) what is 2+2=?</p>
+    
+    <label>
+        <input type="radio" id="a" name="question1" value="correct" onclick="checkAnswer(this)">4
+        <span class="indicator" ></span>
+    </label><br>
+    <label>
+        <input type="radio" id="b" name="question1" value="wrong" onclick="checkAnswer(this)">5
+        <span class="indicator"></span>
+    </label><br>
+    <label>
+        <input type="radio" id="c" name="question1" value="wrong" onclick="checkAnswer(this)">6
+        <span class="indicator"></span>
+    </label><br>
+    <label>
+        <input type="radio" id="d" name="question1" value="wrong" onclick="checkAnswer(this)">7  
+        <span class="indicator"></span>
+    </label>
+</div>
+<div class="question">
+    <p>2) what is 2+10=?</p>
+    
+   
+    <label>
+        <input type="radio" id="a" name="question2" value="wrong" onclick="checkAnswer(this)">11
+        <span class="indicator"></span>
+    </label><br>
+    <label>   
+        <input type="radio" id="b" name="question2" value="correct" onclick="checkAnswer(this)">12
+        <span class="indicator"></span>
+    </label><br>
+    <label>    
+        <input type="radio" id="c" name="question2" value="wrong" onclick="checkAnswer(this)">13  
+        <span class="indicator"></span>
+    </label><br>
+    <label>    
+        <input type="radio" id="d" name="question2" value="wrong" onclick="checkAnswer(this)">14
+        <span class="indicator"></span>
+    </label>
+</div>
+<div class="question">
+    <p>3) what is 20+22=?</p>
+   
+    <label >
+        <input type="radio" id="a" name="question3" value="wrong" onclick="checkAnswer(this)">23
+        <span class="indicator"></span>
+    </label><br>
+    <label >     
+        <input type="radio" id="b" name="question3" value="correct" onclick="checkAnswer(this)">42
+        <span class="indicator"></span>
+    </label><br>
+    <label >    
+        <input type="radio" id="c" name="question3" value="wrong" onclick="checkAnswer(this)">56
+        <span class="indicator"></span>
+    </label><br>
+    <label >    
+        <input type="radio" id="d" name="question3" value="wrong" onclick="checkAnswer(this)">14
+        <span class="indicator"></span>
+    </label>
+</div>
+<div class="question">
+    <p>4) what is 11+11=?</p>
+
+    <label >
+        <input type="radio" id="a" name="question4" value="wrong" onclick="checkAnswer(this)">11
+        <span class="indicator"></span>
+   </label><br>
+    <label >
+        <input type="radio" id="b" name="question4" value="wrong" onclick="checkAnswer(this)">45
+        <span class="indicator"></span>
+   </label><br>
+    <label >    
+        <input type="radio" id="c" name="question4" value="wrong" onclick="checkAnswer(this)">13
+        <span class="indicator"></span>
+   </label><br>
+    <label >    
+        <input type="radio" id="d" name="question4" value="correct" onclick="checkAnswer(this)">22
+        <span class="indicator"></span>
+   </label>
+</div>
+<div class="question">
+    <p>5) what is 10+10=?</p>
+    
+    <label >
+        <input type="radio" id="a" name="question5" value="wrong" onclick="checkAnswer(this)">11
+        <span class="indicator"></span>
+    </label><br>
+    <label >    
+        <input type="radio" id="b" name="question5" value="correct" onclick="checkAnswer(this)">20
+        <span class="indicator"></span>
+    </label><br>
+    <label >    
+        <input type="radio" id="c" name="question5" value="wrong" onclick="checkAnswer(this)">13
+        <span class="indicator"></span>
+    </label><br>
+    <label >    
+        <input type="radio" id="d" name="question5" value="wrong" onclick="checkAnswer(this)">14
+        <span class="indicator"></span>
+    </label>
+    
+</div>
+<button type="button" onclick="showResult()">Submit</button>
+</form>
+<div id="result" style="display:block; margin-top: 20px;">
+        <h2>Your Score: <span id="score"></span>/5</h2>
+    </div>
+
+</body>
+</html>
